@@ -1,0 +1,44 @@
+{
+    "name" : "Sketch Color Finder",
+    "identifier" : "me.tomoyukikashiro.sketch_color_finder",
+    "version" : "1.0.0",
+    "description" : "select layer which use specific color.",
+    "authorEmail" : "ksrtmyk@gmail.com",
+    "author" : "Tomoyuki Kashiro",
+    "commands" : [
+    {
+      "script" : "main.js",
+      "handler" : "findByAll",
+      "shortcut" : "",
+      "name" : "find by all",
+      "identifier" : "findByAll"
+    },
+    {
+      "script" : "main.js",
+      "handler" : "findByFontColor",
+      "shortcut" : "",
+      "name" : "Find by font color",
+      "identifier" : "findByFontColor"
+    },
+    {
+      "script" : "main.js",
+      "handler" : "findByShapeColor",
+      "shortcut" : "",
+      "name" : "Find by shape color",
+      "identifier" : "findByShapeColor"
+    }
+  ],
+  "menu": {
+      "isRoot": true,
+      "items": [
+          {
+            "title" : "Color Finder",
+            "items" : [
+              "findByAll",
+              "findByFontColor",
+              "findByShapeColor"
+            ]
+          }
+      ]
+  }
+}
